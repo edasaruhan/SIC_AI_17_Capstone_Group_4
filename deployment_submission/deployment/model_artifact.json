@@ -1,0 +1,47 @@
+{
+  "artifact_version": "chargeshield-logistic-v3",
+  "model": "balanced_logistic_regression",
+  "features": [
+    "negative_review_ratio_30d",
+    "text_available_ratio_14d",
+    "complaint_count_7d",
+    "complaint_count_30d",
+    "negative_review_ratio_14d",
+    "text_available_ratio_7d",
+    "complaint_acceleration_7_vs_30"
+  ],
+  "mean": {
+    "negative_review_ratio_30d": 0.13408041844014912,
+    "text_available_ratio_14d": 0.4141340312975504,
+    "complaint_count_7d": 4.908787541713014,
+    "complaint_count_30d": 16.72202175859356,
+    "negative_review_ratio_14d": 0.13874092165425123,
+    "text_available_ratio_7d": 0.41564076530294497,
+    "complaint_acceleration_7_vs_30": 1.918672707884697
+  },
+  "std": {
+    "negative_review_ratio_30d": 0.19160030743573125,
+    "text_available_ratio_14d": 0.3021225342092325,
+    "complaint_count_7d": 6.621855495423777,
+    "complaint_count_30d": 25.46104786437688,
+    "negative_review_ratio_14d": 0.22521474832457442,
+    "text_available_ratio_7d": 0.3490867834800812,
+    "complaint_acceleration_7_vs_30": 1.1870887049216639
+  },
+  "weights": [
+    0.07769450590139176,
+    -0.02396627330430707,
+    2.2398806495372034,
+    -2.1709489591225988,
+    0.49258631265602554,
+    0.38503957555620577,
+    -0.39987549365956754
+  ],
+  "bias": -1.7422634106555845,
+  "threshold": 0.82,
+  "risk_levels": {
+    "low_max": 0.4,
+    "medium_max": 0.82
+  },
+  "training_note": "Sentetik prototip; olay-öncesi şikâyet sinyalleriyle eğitilmiştir. Gerçek banka sonucu değildir."
+}
